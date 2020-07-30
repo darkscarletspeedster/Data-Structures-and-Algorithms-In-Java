@@ -66,7 +66,7 @@ public class Stack {
     }
 
     public void push(char c) {
-        if ((isFull() && top >= maxLength - 1) || (!isFull() && top >= maxLength - 1))
+        if ((isFull() && top == maxLength - 1) || (!isFull() && top >= maxLength - 1))
             System.out.println("Stack is Full! Remove Max Lenght to operate unlimited!");
         else if (!isFull()) {
             top++;
