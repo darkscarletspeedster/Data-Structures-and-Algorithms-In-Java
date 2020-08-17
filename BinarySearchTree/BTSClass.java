@@ -163,7 +163,7 @@ public class BTSClass {
     }
 
     private void fillArray(String[] arr, Node leftNode, Node rightNode, int num) {
-        if (num >= arr.length - 1)
+        if (num >= arr.length - 2)
             return;
 
         arr[num + 1] = leftNode == null ? "--" : String.valueOf(leftNode.getKey());
