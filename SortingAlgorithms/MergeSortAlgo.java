@@ -2,10 +2,10 @@ package SortingAlgorithms;
 
 public class MergeSortAlgo {
     public static void main(String[] args) {
-        int[] arr = { 4, 5, 9, 45, 10, 22, 8, 39, 50 };
+        int[] arr = { 4, 5, 9, 45, 10, 22, 8, 39, 50, 1000, 4566, 455, 654, 71111, 50 };
         mergeSort(arr, 0, arr.length - 1);
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " | ");
+            System.out.print(arr[i] + (i == arr.length - 1 ? "" : " | "));
         }
         System.out.println();
     }
